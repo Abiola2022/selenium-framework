@@ -10,7 +10,7 @@ Feature: Account Management
 
     Examples:
       | firstname | lastname | email         | password   | confirmpassword |
-      | Akin      | Ola      | xyz@yahoo.com | London2022 | London2022      |
+      | Akin      | Ola      | xyz1@yahoo.com | London2022 | London2022      |
 
   @accountLogin
   Scenario Outline: Account Login
@@ -21,7 +21,7 @@ Feature: Account Management
 
     Examples:
       | email         | password   |
-      | xyz@yahoo.com | London2022 |
+      | xyz1@yahoo.com | London2022 |
 
 
   @unregisteredCustomer
@@ -44,7 +44,9 @@ Feature: Account Management
 
     Examples:
       | firstname | lastname | email         | password   | confirmpassword |
-      | Akin      | Ola      | xyz@yahoo.com | London2022 | London2022      |
+      | Akin      | Ola      | xyz1@yahoo.com | London2022 | London2022      |
+
+
 
 
 

@@ -8,6 +8,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
 public class AccountManagementSteps {
@@ -41,6 +42,9 @@ public class AccountManagementSteps {
 
     @Then("My account page should be displayed")
     public void myAccountPageShouldBeDisplayed() {
+        String expectedResult = "My Account";
+        String actualResult = driver.getTitle();
+        Assert.assertEquals(expectedResult,actualResult);
 
     }
 
@@ -118,4 +122,6 @@ public class AccountManagementSteps {
     @Then("Account already exist should displayed")
     public void accountAlreadyExistShouldDisplayed() {
     }
+
+
 }
